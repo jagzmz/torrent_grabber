@@ -34,7 +34,7 @@ if address is not None:
     print(x)
     no=int(input("Which torrent you want to download? : "))
     print('+--------------------------------------+')
-    res2=requests.get('https://fastpiratebay.co.uk/{}'.format(data[no-1][3]))
+    res2=requests.get('https://proxyfl.info/{}'.format(data[no-1][3]))
     soup2 = bs(res2.content,"html.parser")
     print('Download Successful.\n\nMade by killswitc_h.')
     time.sleep(3)
