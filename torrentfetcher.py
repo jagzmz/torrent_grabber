@@ -9,7 +9,7 @@ if len(sys.argv) > 1:
 else:
     address=str(input("Enter the Torrent you want to search: "))
 if address is not None:
-    res = requests.get('https://proxyfl.info/search/{}/0/7/0'.format(address),proxies=proxyDict)
+    res = requests.get('https://proxyfl.info/search/{}/0/7/0'.format(address))
     res.raise_for_status()
     soup = bs(res.content,"html.parser")
     data=[]
