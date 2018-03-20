@@ -3,12 +3,6 @@ from bs4 import BeautifulSoup as bs
 from prettytable import PrettyTable
 import os,time
 import re
-http_proxy="151.80.140.233:54566"
-
-proxyDict = { 
-              "http"  : http_proxy
-            }
-
 if len(sys.argv) > 1:
     # Get address from command line.
     address = ' '.join(sys.argv[1:])
